@@ -1,0 +1,35 @@
+## Hugo
+/public/
+/resources/_gen/
+/resources/_gen_old/
+/.hugo_build.lock
+
+## Node
+node_modules/
+
+## Build
+/dist/
+/build/
+
+## Editor directories and files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+## OS files
+ehthumbs.db
+desktop.ini
+
+## Python
+__pycache__/
+*.py[cod]
+
+## Environment
+.env
+.env.*
+
+## Misc
+.cache/

@@ -1,0 +1,16 @@
+baseURL: https://markepps.com/
+languageCode: en-au
+title: markepps.com
+theme: ["PaperMod"]
+
+params:
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  homeInfoParams:
+    Title: Hi there!
+    Content: Personal website of Mark Epps
+
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/markymarkepps"
+    - name: "instagram"
+      url: "https://www.instagram.com/markymarkepps/"
