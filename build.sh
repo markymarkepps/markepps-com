@@ -8,7 +8,7 @@ echo "Building for branch: $CF_PAGES_BRANCH"
 if [ "$CF_PAGES_BRANCH" == "main" ]; then
   # Production build
   echo "Building for production (main branch)..."
-  hugo --gc --minify -b https://markepps.com
+  hugo --gc --minify -b /
 
 elif [ "$CF_PAGES_BRANCH" == "staging" ]; then
   # Staging build
