@@ -1,0 +1,103 @@
+{{- $profile := .Site.Params.home.profile -}}
+<div class="home-profile">
+  {{- /* 1. Avatar Logic */ -}} {{- $avatar := $profile.avatarURL -}} {{- with
+  $profile.gravatarEmail -}} {{- $avatar = md5 . | printf
+  "https://www.gravatar.com/avatar/%v?s=240&d=mp" -}} {{- end -}} {{- if $avatar
+  -}}
+  <div class="home-avatar">
+    {{- $menus := $.Site.Menus.main | default slice -}} {{- with index $menus 0
+    -}} {{- $url := .URL | relLangURL -}} {{- with .Page -}} {{- $url =
+    .RelPermalink -}} {{- end -}}
+    <a
+      href="{{ $url }}"
+      {{
+      with
+      .Title
+      |
+      default
+      .Name
+      }}
+      title="{{ . }}"
+      {{
+      end
+      }}{{
+      if
+      (urls.Parse
+      $url).Host
+      }}
+      rel="noopener noreffer"
+      target="_blank"
+      {{
+      end
+      }}
+    >
+      {{- dict "Src" $avatar | partial "plugin/img.html" -}}
+    </a>
+    {{- else -}} {{- dict "Src" $avatar | partial "plugin/img.html" -}} {{- end
+    -}}
+  </div>
+  {{- end -}} {{- /* 2. THE STICKER - Fixed Title, Animated Subtitle */ -}}
+  <div class="hello-tag">
+    <div class="tag-top">
+      <div class="hello-text">HELLO</div>
+      <div class="name-is-text">my name is</div>
+    </div>
+    <div class="tag-bottom">
+      {{- with $profile.subtitle -}} {{- if $profile.typeit -}} {{- /* 1. Force
+      LoveIt to load the TypeIt JS by using its scratch logic */ -}} {{- $dummy
+      := dict "Content" "" "Scratch" $.Scratch | partial "function/id.html" -}}
+      {{- dict $dummy (slice $dummy) | dict "typeitMap" | merge ($.Scratch.Get
+      "this") | $.Scratch.Set "this" -}} {{- /* 2. Create our own unique ID that
+      the theme won't auto-animate */ -}}
+      <div id="sticker-name" class="typeit"></div>
+
+      {{- /* 3. Our custom, slow-speed script */ -}}
+      <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+          var checkTypeIt = setInterval(function () {
+            if (window.TypeIt) {
+              clearInterval(checkTypeIt);
+              new TypeIt("#sticker-name", {
+                strings: ["{{ . }}"],
+                speed: 220 /* Painfully slow to confirm it works */,
+                startDelay: 1000 /* Wait for page load */,
+                lifeLike: true,
+                cursor: true,
+                waitUntilVisible: true,
+              }).go();
+            }
+          }, 100);
+        });
+      </script>
+      {{- else -}} {{- . | safeHTML -}} {{- end -}} {{- end -}}
+    </div>
+  </div>
+  {{- /* 3. Social Links Logic */ -}} {{- if $profile.social -}}
+  <div class="links">
+    {{- $socialMap := resources.Get "data/social.yml" | transform.Unmarshal -}}
+    {{- $socialArr := slice -}} {{- range $key, $value := .Site.Params.social
+    -}} {{- $social := $key | lower | index $socialMap | default dict -}} {{-
+    with $social.Alias -}} {{- $social = index $socialMap . | default dict -}}
+    {{- end -}} {{- if $value -}} {{- if reflect.IsMap $value -}} {{- with
+    $value.weight -}} {{- $social = dict "Weight" . | merge $social -}} {{- end
+    -}} {{- with $value.prefix -}} {{- $social = dict "Prefix" . | merge $social
+    -}} {{- end -}} {{- with index $value "template" -}} {{- $social = dict
+    "Template" . | merge $social -}} {{- end -}} {{- with $value.id -}} {{-
+    $social = dict "Id" . | merge $social -}} {{- end -}} {{- with $value.url
+    -}} {{- $social = dict "Url" . | merge $social -}} {{- end -}} {{- with
+    $value.title -}} {{- $social = dict "Title" . | merge $social -}} {{- end
+    -}} {{- with $value.newtab -}} {{- $social = dict "Newtab" . | merge $social
+    -}} {{- end -}} {{- with $value.icon -}} {{- $social = dict "Icon" . | merge
+    $social -}} {{- end -}} {{- with $value.rel -}} {{- $social = dict "Rel" . |
+    merge $social -}} {{- end -}} {{- else if ne $value true -}} {{- $social =
+    dict "Id" $value | merge $social -}} {{- end -}} {{- if
+    $social.Icon.Simpleicons -}} {{- $prefix := ($.Scratch.Get "cdn" | default
+    dict).simpleIconsPrefix -}} {{- $social = dict "Prefix" $prefix | dict
+    "Icon" | merge $social -}} {{- end -}} {{- $socialArr = $socialArr | append
+    $social -}} {{- end -}} {{- end -}} {{- range sort $socialArr "Weight" -}}
+    {{- partial "plugin/social.html" . -}} {{- end -}}
+  </div>
+  {{- end -}} {{- with $profile.disclaimer -}}
+  <h3 class="home-disclaimer">{{- . | safeHTML -}}</h3>
+  {{- end -}}
+</div>
