@@ -1,7 +1,7 @@
 ---
 date: 2026-03-01T12:15:40+11:00
 draft: false
-title: New Training Plan - Build my base
+title: New Training Plan - Build my Base
 tags:
   - gym
   - running
