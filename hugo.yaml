@@ -1,6 +1,7 @@
 baseURL: https://markepps.com/
 languageCode: en-au
 title: markepps.com
+author: Mark Epps
 theme: ["PaperMod"]
 copyright: © 2025 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
@@ -14,6 +15,7 @@ params:
     Title: Hi there!
     Content: Personal website of Mark Epps
 
+  author: Mark Epps
   socialIcons: # optional
     - name: "github"
       url: "https://github.com/markymarkepps"
