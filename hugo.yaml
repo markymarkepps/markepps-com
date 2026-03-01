@@ -15,3 +15,5 @@ params:
       url: "https://github.com/markymarkepps"
     - name: "instagram"
       url: "https://www.instagram.com/markymarkepps/"
+  showFullContents: false
+  displayFullContent: false
