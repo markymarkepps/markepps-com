@@ -9,6 +9,7 @@ tags:
 slug: training-plan-build-base
 categories:
   - health
+description: Starting a new training plan focusing on building my base.
 ---
 
 Alrighty!
