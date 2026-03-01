@@ -54,3 +54,9 @@ params:
 
   # Theme behavior
   defaultTheme: auto
+  app:
+    title: "Mark Epps"
+    svgFavicon: /favicon.svg
+    themeColor: "#ffffff"
+    iconColor: "#d32f2f"
+    tileColor: "#d32f2f"
