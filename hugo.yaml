@@ -4,6 +4,10 @@ title: markepps.com
 theme: ["PaperMod"]
 copyright: © 2025 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
+frontmatter:
+  # use a a posts description as a summary, if available
+  summary: ["description", "summary"]
+
 params:
   defaultTheme: auto # to switch between dark or light according to browser theme
   homeInfoParams:
