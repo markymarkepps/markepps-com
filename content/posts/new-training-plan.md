@@ -1,6 +1,6 @@
 ---
 date: 2026-03-01T12:15:40+11:00
-draft: true
+draft: false
 title: New Training Plan - Build my base
 tags:
   - gym
