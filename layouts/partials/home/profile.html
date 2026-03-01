@@ -43,15 +43,18 @@
       <div class="name-is-text">my name is</div>
     </div>
     <div class="tag-bottom">
-      {{- with $profile.subtitle -}} {{- if $profile.typeit -}} {{- /* 1. Force
+      {{- with $profile.subtitle -}} {{- if $profile.typeit -}} {{- /* Force
       LoveIt to load the TypeIt JS by using its scratch logic */ -}} {{- $dummy
       := dict "Content" "" "Scratch" $.Scratch | partial "function/id.html" -}}
       {{- dict $dummy (slice $dummy) | dict "typeitMap" | merge ($.Scratch.Get
-      "this") | $.Scratch.Set "this" -}} {{- /* 2. Create our own unique ID that
-      the theme won't auto-animate */ -}}
+      "this") | $.Scratch.Set "this" -}} {{- /* FIX: The ghost div for the
+      theme's JS to find and prevent null errors */ -}}
+      <div id="{{ $dummy }}" style="display: none"></div>
+
+      {{- /* Create our own unique ID that the theme won't auto-animate */ -}}
       <div id="sticker-name" class="typeit"></div>
 
-      {{- /* 3. Our custom, slow-speed script */ -}}
+      {{- /* Our custom, slow-speed script */ -}}
       <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
           var checkTypeIt = setInterval(function () {
@@ -59,8 +62,8 @@
               clearInterval(checkTypeIt);
               new TypeIt("#sticker-name", {
                 strings: ["{{ . }}"],
-                speed: 220 /* Painfully slow to confirm it works */,
-                startDelay: 1000 /* Wait for page load */,
+                speed: 250 /* Adjust typing speed here (Higher = Slower) */,
+                startDelay: 1200 /* Wait 1.2s before starting */,
                 lifeLike: true,
                 cursor: true,
                 waitUntilVisible: true,
@@ -72,6 +75,7 @@
       {{- else -}} {{- . | safeHTML -}} {{- end -}} {{- end -}}
     </div>
   </div>
+
   {{- /* 3. Social Links Logic */ -}} {{- if $profile.social -}}
   <div class="links">
     {{- $socialMap := resources.Get "data/social.yml" | transform.Unmarshal -}}
@@ -97,7 +101,7 @@
     $social -}} {{- end -}} {{- end -}} {{- range sort $socialArr "Weight" -}}
     {{- partial "plugin/social.html" . -}} {{- end -}}
   </div>
-  {{- end -}} {{- with $profile.disclaimer -}}
+  {{- end -}} {{- /* 4. Disclaimer Logic */ -}} {{- with $profile.disclaimer -}}
   <h3 class="home-disclaimer">{{- . | safeHTML -}}</h3>
   {{- end -}}
 </div>

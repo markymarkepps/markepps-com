@@ -4,7 +4,7 @@ languageName: English
 defaultContentLanguage: en
 theme: LoveIt
 title: Mark Epps
-description: Website of Mark Epps
+description: I'm Mark Epps. I like building things and solving problems
 copyright: © 2025 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 # LoveIt-specific Author configuration
@@ -41,7 +41,6 @@ params:
     profile:
       enable: true
       social: true
-      title: ""
       subtitle: "Mark Epps"
       typeit: true
   header:
