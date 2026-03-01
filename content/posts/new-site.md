@@ -1,8 +1,13 @@
 ---
-date: "2025-10-10T13:18:24+11:00"
+date: 2025-10-10T13:18:24+11:00
 draft: false
-title: "New Site & a New Stack"
-tags: ["meta", "hugo", "cloudflare"]
+title: New Site & a New Stack
+tags:
+  - meta
+  - hugo
+  - cloudflare
+slug: site-stack
+description: After nearly a decade of running **markepps.com** with Ghost on a DigitalOcean droplet, I've decided it's time for a change.
 ---
 
 ### Out with the Old
