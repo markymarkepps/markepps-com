@@ -1,17 +1,56 @@
 baseURL: https://markepps.com/
 languageCode: en-au
-title: markepps.com
-theme: ["PaperMod"]
+languageName: English
+defaultContentLanguage: en
+theme: LoveIt
+title: Mark Epps
+description: I'm Mark Epps. I like building things and solving problems
 copyright: © 2025 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
+# LoveIt-specific Author configuration
+author:
+  name: Mark Epps
+menu:
+  main:
+    - name: Projects
+      url: /projects/
+      weight: 2
+      pre: '<i class="fas fa-code-branch"></i>'
+    - name: Hobbies
+      url: /hobbies/
+      weight: 3
+      pre: '<i class="fas fa-heart"></i>'
+    - name: Experience
+      url: /experience/
+      weight: 4
+      pre: '<i class="fas fa-briefcase"></i>'
+    - name: Contact
+      url: /contact/
+      weight: 5
+      pre: '<i class="fas fa-envelope"></i>'
 params:
-  defaultTheme: auto # to switch between dark or light according to browser theme
-  homeInfoParams:
-    Title: Hi there!
-    Content: Personal website of Mark Epps
+  seo:
+    image: /favicon.svg # Sets a default image for link previews
+  # The theme looks here for SEO and Footer data
+  author:
+    name: Mark Epps
+    link: https://markepps.com
 
-  socialIcons: # optional
-    - name: "github"
-      url: "https://github.com/markymarkepps"
-    - name: "instagram"
-      url: "https://www.instagram.com/markymarkepps/"
+  # This replaces PaperMod's homeInfoParams
+  home:
+    profile:
+      enable: true
+      social: true
+      subtitle: "Mark Epps"
+      typeit: true
+  header:
+    title:
+      name:
+      pre: '<i class="fas fa-home"></i>'
+  # LoveIt uses a 'social' block instead of 'socialIcons'
+  social:
+    github: markymarkepps
+    instagram: markymarkepps
+
+  # Theme behavior
+  defaultTheme: auto

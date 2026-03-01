@@ -1,15 +1,14 @@
 ---
 date: 2026-03-01T12:15:40+11:00
 draft: false
-title: New Training Plan - Build my Base
+title: Training Plan - Build my Base
 tags:
   - gym
   - running
   - cycling
 slug: training-plan-build-base
-categories:
-  - health
-description: Starting a new training plan focusing on building my base.
+description: Starting a new training plan to focus on building my base over the next 6 weeks.
+summary: Starting a new training plan to focus on building my base over the next 6 weeks.
 ---
 
 Alrighty!
@@ -34,10 +33,10 @@ and the focus will be on building my base:
 | :------ | :------------- | :-------------------------- | :---------------------------------------------------- |
 | **Mon** | **Strength A** | Heavy Squat + Physio        | Target: Continuous build from 3x5 @ 46kg              |
 | **Tue** | **Cycle**      | 45m Power Zone Endurance    | Target: Power Zones 2 & 3                             |
-| **Wed** | **Run / Walk** | Return to Running Intervals | Target: Build up to 1m jog / 1m walk (40 mins total). |
+| **Wed** | **Run**        | Return to Running Intervals | Target: Build up to 1m jog / 1m walk (40 mins total). |
 | **Thu** | **Strength B** | Heavy Deadlift + Physio     | Target: Continuous build 1x5 @ 60kg                   |
 | **Fri** | **Cycle**      | 60m Power Zone Endurance    | Target: Strict Power Zone 2                           |
-| **Sat** | **Run / Walk** | Return to Running Intervals | Target: 1m jog / 1m walk (40 mins total).             |
+| **Sat** | **Run**        | Return to Running Intervals | Target: 1m jog / 1m walk (40 mins total).             |
 | **Sun** | **Rest**       | Active Recovery             | Spa / mobility.                                       |
 
 ---
@@ -101,6 +100,6 @@ Non-negotiable daily work to keep the shoulder stable
 
 - **Shoulder external rotation - band:** 2 sets of 20 reps, slow and controlled.
 - **Shoulder taps:** 2 sets of 10 reps, slow and controlled.
-- **VW's:** 1 set of 20, slow but comfortable with the shoulder
+- **VW's:** 1 set of 20, slow but comfortable with the shoulder. Build up to 3 sets a day.
 - **Bow and arrow stretch:** 1 set of 10 reps each side.
 - **Massage Ball:** Evening deep tissue release on the calves and back/shoulder.
