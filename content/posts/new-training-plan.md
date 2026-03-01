@@ -1,7 +1,7 @@
 ---
 date: 2026-03-01T12:15:40+11:00
-draft: true
-title: New Training Plan - Build my base
+draft: false
+title: New Training Plan - Build my Base
 tags:
   - gym
   - running
@@ -9,6 +9,7 @@ tags:
 slug: training-plan-build-base
 categories:
   - health
+description: Starting a new training plan focusing on building my base.
 ---
 
 Alrighty!
