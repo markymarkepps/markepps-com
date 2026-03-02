@@ -41,6 +41,7 @@ params:
     profile:
       enable: true
       social: true
+      title: ""
       subtitle: "Mark Epps"
       typeit: true
   header:
@@ -51,9 +52,11 @@ params:
   social:
     github: markymarkepps
     instagram: markymarkepps
+    strava: markymarkepps
+    linkedin: markepps
 
   # Theme behavior
-  defaultTheme: auto
+  defaultTheme: dark
   app:
     title: "Mark Epps"
     svgFavicon: /favicon.svg
