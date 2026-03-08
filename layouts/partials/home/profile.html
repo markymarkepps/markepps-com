@@ -25,7 +25,7 @@
       (urls.Parse
       $url).Host
       }}
-      rel="noopener noreffer"
+      rel="noopener noreferrer"
       target="_blank"
       {{
       end
@@ -61,7 +61,7 @@
             if (window.TypeIt) {
               clearInterval(checkTypeIt);
               new TypeIt("#sticker-name", {
-                strings: ["{{ . }}"],
+                strings: [{{ . | jsonify }}],
                 speed: 250 /* Adjust typing speed here (Higher = Slower) */,
                 startDelay: 1200 /* Wait 1.2s before starting */,
                 lifeLike: true,
