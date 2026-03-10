@@ -4,8 +4,8 @@ languageName: English
 defaultContentLanguage: en
 theme: LoveIt
 title: Mark Epps
-description: I'm Mark Epps. I like building things and solving problems
-copyright: © 2025 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+description: I'm Mark Epps. I like building things and solving problems.
+copyright: © 2026 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 # LoveIt-specific Author configuration
 author:
@@ -41,8 +41,8 @@ params:
     profile:
       enable: true
       social: true
-      title: ""
-      subtitle: "Mark Epps"
+      title: Mark Epps
+      subtitle: I like building things and solving problems.
       typeit: true
   header:
     title:
@@ -58,8 +58,8 @@ params:
   # Theme behavior
   defaultTheme: dark
   app:
-    title: "Mark Epps"
+    title: Mark Epps
     svgFavicon: /favicon.svg
-    themeColor: "#ffffff"
+    themeColor: "#f5f5f5"
     iconColor: "#d32f2f"
     tileColor: "#d32f2f"
