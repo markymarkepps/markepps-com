@@ -16,7 +16,7 @@
 }
 
 .tag-top {
-  background: #1976d2; /* Light mode: blue */
+  background: $accent-light; /* Light mode: blue */
   color: white;
   padding: 25px 0 15px 0;
   display: flex;
@@ -27,7 +27,7 @@
 
 /* Dark mode: red */
 [theme="dark"] .tag-top {
-  background: #d32f2f;
+  background: $accent-dark;
 }
 
 .hello-text {
@@ -67,13 +67,13 @@
    ========================================= */
 /* Cursor colour matches the tag-top colour */
 .home-subtitle .ti-cursor {
-  color: #1976d2 !important; /* Light mode: blue */
+  color: $accent-light !important; /* Light mode: blue */
   transition: color 0.4s ease;
 }
 
 /* Dark mode: red cursor */
 [theme="dark"] .home-subtitle .ti-cursor {
-  color: #d32f2f !important;
+  color: $accent-dark !important;
 }
 
 /* =========================================
@@ -89,10 +89,10 @@
   transition: color 0.2s ease-in-out;
 }
 .menu-item:hover i {
-  color: #1976d2; /* Light mode: blue */
+  color: $accent-light; /* Light mode: blue */
 }
 [theme="dark"] .menu-item:hover i {
-  color: #d32f2f; /* Dark mode: red */
+  color: $accent-dark; /* Dark mode: red */
 }
 
 /* Top Left Home/Header Button Hover */
@@ -102,11 +102,11 @@
 }
 .header-title a:hover i,
 .header-title a:hover {
-  color: #1976d2 !important; /* Light mode: blue */
+  color: $accent-light !important; /* Light mode: blue */
 }
 [theme="dark"] .header-title a:hover i,
 [theme="dark"] .header-title a:hover {
-  color: #d32f2f !important; /* Dark mode: red */
+  color: $accent-dark !important; /* Dark mode: red */
 }
 
 /* Profile Social Icons Base Style */
@@ -118,12 +118,12 @@
 
 /* Profile Social Icons Hover */
 .home-profile .links a:hover {
-  color: #1976d2 !important; /* Light mode: blue */
+  color: $accent-light !important; /* Light mode: blue */
   transform: scale(1.15) translate(-2px, -2px) !important;
   filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.3)) !important;
 }
 [theme="dark"] .home-profile .links a:hover {
-  color: #d32f2f !important; /* Dark mode: red */
+  color: $accent-dark !important; /* Dark mode: red */
 }
 
 /* =========================================

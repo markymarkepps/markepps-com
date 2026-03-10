@@ -2,12 +2,16 @@
 // Override Variables
 // ==============================
 
+// -------- Accent colours -------- //
+$accent-light: #1976d2; // light mode accent (blue)
+$accent-dark: #d32f2f; // dark mode accent (red)
+
 // -------- Light mode -------- //
 $global-background-color: #f5f5f5; // page bg
 $global-font-color: #212121; // primary text
 $global-font-secondary-color: #757575; // secondary / meta text
 $global-link-color: #212121; // body link
-$global-link-hover-color: #1976d2; // body link hover (matches accent)
+$global-link-hover-color: $accent-light; // body link hover (matches accent)
 $global-border-color: #e0e0e0; // dividers / borders
 $header-background-color: #ebebeb; // header bar
 $header-hover-color: #212121;
