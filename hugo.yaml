@@ -5,7 +5,7 @@ defaultContentLanguage: en
 theme: LoveIt
 title: Mark Epps
 description: I'm Mark Epps. I like building things and solving problems
-copyright: © 2025 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+copyright: © 2026 Mark Epps. Content licensed under [CC BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
 
 # LoveIt-specific Author configuration
 author:
@@ -24,10 +24,6 @@ menu:
       url: /experience/
       weight: 4
       pre: '<i class="fas fa-briefcase"></i>'
-    - name: Contact
-      url: /contact/
-      weight: 5
-      pre: '<i class="fas fa-envelope"></i>'
 params:
   seo:
     image: /favicon.svg # Sets a default image for link previews

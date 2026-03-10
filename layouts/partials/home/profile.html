@@ -80,7 +80,7 @@
     $social -}} {{- end -}} {{- end -}} {{- range sort $socialArr "Weight" -}}
     {{- partial "plugin/social.html" . -}} {{- end -}}
   </div>
-  {{- end -}} {{- /* 4. Disclaimer Logic */ -}} {{- with $profile.disclaimer -}}
+  {{- end -}} {{- /* 5. Disclaimer Logic */ -}} {{- with $profile.disclaimer -}}
   <h3 class="home-disclaimer">{{- . | safeHTML -}}</h3>
   {{- end -}}
 </div>

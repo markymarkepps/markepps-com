@@ -52,7 +52,7 @@
 }
 
 /* Keeps the box from collapsing while waiting to type */
-.tag-bottom .typeit:empty:before {
+.home-subtitle .typeit:empty:before {
   content: " ";
 }
 
@@ -60,7 +60,7 @@
    2. TYPEIT CURSOR SETTINGS
    ========================================= */
 /* Consolidated cursor settings to match the Permanent Marker style */
-.tag-bottom .ti-cursor {
+.home-subtitle .ti-cursor {
   font-size: 3rem !important;
   font-weight: 300 !important;
   color: #d32f2f !important; /* Makes the cursor red */
