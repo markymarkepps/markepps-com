@@ -1,0 +1,35 @@
+// ==============================
+// Override Variables
+// ==============================
+
+// -------- Accent colours -------- //
+$accent-light: #1976d2; // light mode accent (blue)
+$accent-dark: #d32f2f; // dark mode accent (red)
+
+// -------- Light mode -------- //
+$global-background-color: #f5f5f5; // page bg
+$global-font-color: #212121; // primary text
+$global-font-secondary-color: #757575; // secondary / meta text
+$global-link-color: #212121; // body link
+$global-link-hover-color: $accent-light; // body link hover (matches accent)
+$global-border-color: #e0e0e0; // dividers / borders
+$header-background-color: #ebebeb; // header bar
+$header-hover-color: #212121;
+$search-background-color: #e0e0e0;
+$table-background-color: #f5f5f5;
+$table-thead-color: #e0e0e0;
+$code-background-color: #ebebeb;
+
+// -------- Dark mode --------- //
+$global-background-color-dark: #1a1a1b; // page bg
+$global-font-color-dark: #e0e0e0; // primary text
+$global-font-secondary-color-dark: #9e9e9e; // secondary / meta text
+$global-link-color-dark: #e0e0e0; // body link
+$global-link-hover-color-dark: #ffffff; // body link hover
+$global-border-color-dark: #2e2e2e; // dividers / borders
+$header-background-color-dark: #111111; // header bar
+$header-hover-color-dark: #ffffff;
+$search-background-color-dark: #2e2e2e;
+$table-background-color-dark: #1e1e1e;
+$table-thead-color-dark: #242424;
+$code-background-color-dark: #222222;

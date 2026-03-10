@@ -25,7 +25,7 @@
       (urls.Parse
       $url).Host
       }}
-      rel="noopener noreffer"
+      rel="noopener noreferrer"
       target="_blank"
       {{
       end
@@ -43,40 +43,19 @@
       <div class="name-is-text">my name is</div>
     </div>
     <div class="tag-bottom">
-      {{- with $profile.subtitle -}} {{- if $profile.typeit -}} {{- /* Force
-      LoveIt to load the TypeIt JS by using its scratch logic */ -}} {{- $dummy
-      := dict "Content" "" "Scratch" $.Scratch | partial "function/id.html" -}}
-      {{- dict $dummy (slice $dummy) | dict "typeitMap" | merge ($.Scratch.Get
-      "this") | $.Scratch.Set "this" -}} {{- /* FIX: The ghost div for the
-      theme's JS to find and prevent null errors */ -}}
-      <div id="{{ $dummy }}" style="display: none"></div>
-
-      {{- /* Create our own unique ID that the theme won't auto-animate */ -}}
-      <div id="sticker-name" class="typeit"></div>
-
-      {{- /* Our custom, slow-speed script */ -}}
-      <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function () {
-          var checkTypeIt = setInterval(function () {
-            if (window.TypeIt) {
-              clearInterval(checkTypeIt);
-              new TypeIt("#sticker-name", {
-                strings: ["{{ . }}"],
-                speed: 250 /* Adjust typing speed here (Higher = Slower) */,
-                startDelay: 1200 /* Wait 1.2s before starting */,
-                lifeLike: true,
-                cursor: true,
-                waitUntilVisible: true,
-              }).go();
-            }
-          }, 100);
-        });
-      </script>
-      {{- else -}} {{- . | safeHTML -}} {{- end -}} {{- end -}}
+      {{- with $profile.title -}}{{- . | safeHTML -}}{{- end -}}
     </div>
   </div>
 
-  {{- /* 3. Social Links Logic */ -}} {{- if $profile.social -}}
+  {{- /* 3. Subtitle */ -}} {{- with $profile.subtitle -}}
+  <div class="home-subtitle">
+    {{- if $profile.typeit -}} {{- $id := dict "Content" . "Scratch" $.Scratch |
+    partial "function/id.html" -}}
+    <div id="{{ $id }}" class="typeit"></div>
+    {{- dict $id (slice $id) | dict "typeitMap" | merge ($.Scratch.Get "this") |
+    $.Scratch.Set "this" -}} {{- else -}} {{- . | safeHTML -}} {{- end -}}
+  </div>
+  {{- end -}} {{- /* 4. Social Links Logic */ -}} {{- if $profile.social -}}
   <div class="links">
     {{- $socialMap := resources.Get "data/social.yml" | transform.Unmarshal -}}
     {{- $socialArr := slice -}} {{- range $key, $value := .Site.Params.social
@@ -101,7 +80,7 @@
     $social -}} {{- end -}} {{- end -}} {{- range sort $socialArr "Weight" -}}
     {{- partial "plugin/social.html" . -}} {{- end -}}
   </div>
-  {{- end -}} {{- /* 4. Disclaimer Logic */ -}} {{- with $profile.disclaimer -}}
+  {{- end -}} {{- /* 5. Disclaimer Logic */ -}} {{- with $profile.disclaimer -}}
   <h3 class="home-disclaimer">{{- . | safeHTML -}}</h3>
   {{- end -}}
 </div>
