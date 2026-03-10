@@ -41,8 +41,8 @@ params:
     profile:
       enable: true
       social: true
-      title: ""
-      subtitle: "Mark Epps"
+      title: Mark Epps
+      subtitle: I like building things and solving problems
       typeit: true
   header:
     title:
@@ -58,7 +58,7 @@ params:
   # Theme behavior
   defaultTheme: dark
   app:
-    title: "Mark Epps"
+    title: Mark Epps
     svgFavicon: /favicon.svg
     themeColor: "#ffffff"
     iconColor: "#d32f2f"
