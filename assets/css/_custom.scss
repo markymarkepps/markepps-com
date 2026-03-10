@@ -16,7 +16,7 @@
 }
 
 .tag-top {
-  background: #1565c0; /* Light mode: blue */
+  background: #1976d2; /* Light mode: blue */
   color: white;
   padding: 25px 0 15px 0;
   display: flex;
@@ -46,7 +46,7 @@
 }
 
 .tag-bottom {
-  background: #fff;
+  background: #fff; /* White card pops against #f5f5f5 page bg */
   color: #000;
   font-family: "Permanent Marker", cursive;
   font-size: 3.5rem;
@@ -67,7 +67,7 @@
    ========================================= */
 /* Cursor colour matches the tag-top colour */
 .home-subtitle .ti-cursor {
-  color: #1565c0 !important; /* Light mode: blue */
+  color: #1976d2 !important; /* Light mode: blue */
   transition: color 0.4s ease;
 }
 
@@ -89,7 +89,7 @@
   transition: color 0.2s ease-in-out;
 }
 .menu-item:hover i {
-  color: #1565c0; /* Light mode: blue */
+  color: #1976d2; /* Light mode: blue */
 }
 [theme="dark"] .menu-item:hover i {
   color: #d32f2f; /* Dark mode: red */
@@ -102,7 +102,7 @@
 }
 .header-title a:hover i,
 .header-title a:hover {
-  color: #1565c0 !important; /* Light mode: blue */
+  color: #1976d2 !important; /* Light mode: blue */
 }
 [theme="dark"] .header-title a:hover i,
 [theme="dark"] .header-title a:hover {
@@ -118,7 +118,7 @@
 
 /* Profile Social Icons Hover */
 .home-profile .links a:hover {
-  color: #1565c0 !important; /* Light mode: blue */
+  color: #1976d2 !important; /* Light mode: blue */
   transform: scale(1.15) translate(-2px, -2px) !important;
   filter: drop-shadow(6px 6px 0px rgba(0, 0, 0, 0.3)) !important;
 }
@@ -127,7 +127,19 @@
 }
 
 /* =========================================
-   4. SECTION PAGE HEADINGS
+   4. POST SUMMARY FOOTER DATE
+   ========================================= */
+.post-footer-date {
+  font-size: 0.875rem;
+  color: $global-font-secondary-color;
+
+  [theme="dark"] & {
+    color: $global-font-secondary-color-dark;
+  }
+}
+
+/* =========================================
+   5. SECTION PAGE HEADINGS
    ========================================= */
 /* Override theme's right-align on section/special page titles */
 .special .single-title,

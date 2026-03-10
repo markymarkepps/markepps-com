@@ -60,6 +60,6 @@ params:
   app:
     title: Mark Epps
     svgFavicon: /favicon.svg
-    themeColor: "#ffffff"
+    themeColor: "#f5f5f5"
     iconColor: "#d32f2f"
     tileColor: "#d32f2f"
