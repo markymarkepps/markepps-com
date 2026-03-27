@@ -3,18 +3,18 @@
 **Project:** markepps.com
 **Milestone:** 1 — Bug fixes & technical debt
 **Initialized:** 2026-03-27
-**Last updated:** 2026-03-27
+**Last updated:** 2026-03-30
 
 ## Current Status
 
-**Active phase:** None — ready to start Phase 1
-**Next action:** `/gsd-plan-phase 1`
+**Active phase:** None — Phase 1 complete
+**Next action:** `/gsd-plan-phase 2`
 
 ## Phase Progress
 
 | Phase | Name | Status |
 |-------|------|--------|
-| 1 | Dynamic Relative Dates | Not started |
+| 1 | Dynamic Relative Dates | ✅ Complete (416f6c4) |
 | 2 | Technical Debt Cleanup | Not started |
 
 ## Key Context
@@ -30,10 +30,12 @@
 
 | Date | Decision | Outcome |
 |------|----------|---------|
-| 2026-03-27 | Fix time-ago client-side (JS) | Pending — Phase 1 |
+| 2026-03-27 | Fix time-ago client-side (JS) | ✅ Done — Phase 1 |
 | 2026-03-27 | Self-host Permanent Marker font | Pending — Phase 2 |
 | 2026-03-27 | Pin LoveIt submodule to commit SHA | Pending — Phase 2 |
 
 ## Completed Phases
 
-(none yet)
+| Phase | Name | Commit | Notes |
+|-------|------|--------|-------|
+| 1 | Dynamic Relative Dates | 416f6c4 | BUG-01: `data-publish-date` + client-side JS |

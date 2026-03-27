@@ -1,6 +1,7 @@
 # STRUCTURE.md — File & Directory Structure
 
 ## Project Root
+
 ```
 markepps-com/
 ├── hugo.yaml              # Main Hugo config (site settings, menus, params)
@@ -24,6 +25,7 @@ markepps-com/
 ```
 
 ## Content Directory (`content/`)
+
 ```
 content/
 ├── posts/
@@ -36,6 +38,7 @@ content/
 ```
 
 ## Layouts Directory (`layouts/`) — Overrides Only
+
 ```
 layouts/
 ├── _default/
@@ -47,6 +50,7 @@ layouts/
 ```
 
 ## Assets Directory (`assets/css/`)
+
 ```
 assets/css/
 ├── _custom.scss                  # Custom styles: hello-sticker, hover FX, typography
@@ -54,6 +58,7 @@ assets/css/
 ```
 
 ## Static Directory (`static/`)
+
 ```
 static/
 ├── favicon.svg                   # SVG favicon (also used as SEO og:image)
@@ -67,11 +72,12 @@ static/
 ```
 
 ## Navigation Menu (from hugo.yaml)
-| Weight | Name | URL | Icon |
-|--------|------|-----|------|
-| 2 | Projects | /projects/ | fa-code-branch |
-| 3 | Hobbies | /hobbies/ | fa-heart |
-| 4 | Experience | /experience/ | fa-briefcase |
-| 5 | Contact | /contact/ | fa-envelope |
+
+| Weight | Name       | URL          | Icon           |
+| ------ | ---------- | ------------ | -------------- |
+| 2      | Projects   | /projects/   | fa-code-branch |
+| 3      | Hobbies    | /hobbies/    | fa-heart       |
+| 4      | Experience | /experience/ | fa-briefcase   |
+| 5      | Contact    | /contact/    | fa-envelope    |
 
 Note: Weight 1 is implicitly the Home/header icon (`<i class="fas fa-home">`)
