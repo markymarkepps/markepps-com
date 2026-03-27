@@ -7,16 +7,16 @@
 
 ### Bug Fixes
 
-- [ ] **BUG-01**: Relative "time ago" on post summaries updates dynamically (not frozen at build time)
+- [x] **BUG-01**: Relative "time ago" on post summaries updates dynamically (not frozen at build time)
   - Currently: `now.Unix` in `summary.html` is evaluated at build time — dates are stale until next deploy
   - Fix: Client-side JS reads a `data-publish-date` attribute and computes relative time on page load
 
 ### Technical Debt
 
-- [ ] **DEBT-01**: `public/` directory is excluded from git (verify or add to `.gitignore`)
-- [ ] **DEBT-02**: `build.sh` is documented — its steps and purpose are understood
-- [ ] **DEBT-03**: LoveIt git submodule is pinned to a specific commit SHA instead of just the `v0.3.0` branch tip
-- [ ] **DEBT-04**: `Permanent Marker` Google Font is self-hosted — removed Google Fonts `@import` runtime dependency
+- [x] **DEBT-01**: `public/` directory is excluded from git (verify or add to `.gitignore`)
+- [x] **DEBT-02**: `build.sh` is documented — its steps and purpose are understood
+- [x] **DEBT-03**: LoveIt git submodule is pinned to a specific commit SHA instead of just the `v0.3.0` branch tip
+- [x] **DEBT-04**: `Permanent Marker` Google Font is self-hosted — removed Google Fonts `@import` runtime dependency
 
 ## v2 Requirements
 

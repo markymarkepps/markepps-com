@@ -3,19 +3,19 @@
 **Project:** markepps.com
 **Milestone:** 1 — Bug fixes & technical debt
 **Initialized:** 2026-03-27
-**Last updated:** 2026-03-30
+**Last updated:** 2026-03-28
 
 ## Current Status
 
-**Active phase:** None — Phase 1 complete
-**Next action:** `/gsd-plan-phase 2`
+**Active phase:** None — Milestone 1 complete ✅
+**Next action:** `/gsd-complete-milestone` or start new milestone
 
 ## Phase Progress
 
 | Phase | Name | Status |
 |-------|------|--------|
 | 1 | Dynamic Relative Dates | ✅ Complete (416f6c4) |
-| 2 | Technical Debt Cleanup | Not started |
+| 2 | Technical Debt Cleanup | ✅ Complete (02904dd) |
 
 ## Key Context
 
@@ -31,11 +31,12 @@
 | Date | Decision | Outcome |
 |------|----------|---------|
 | 2026-03-27 | Fix time-ago client-side (JS) | ✅ Done — Phase 1 |
-| 2026-03-27 | Self-host Permanent Marker font | Pending — Phase 2 |
-| 2026-03-27 | Pin LoveIt submodule to commit SHA | Pending — Phase 2 |
+| 2026-03-28 | Self-host Permanent Marker font | ✅ Done — Phase 2 |
+| 2026-03-28 | Pin LoveIt submodule to commit SHA | ✅ Done — Phase 2 |
 
 ## Completed Phases
 
 | Phase | Name | Commit | Notes |
 |-------|------|--------|-------|
 | 1 | Dynamic Relative Dates | 416f6c4 | BUG-01: `data-publish-date` + client-side JS |
+| 2 | Technical Debt Cleanup | 02904dd | DEBT-01–04: gitignore ✅, build.sh docs, submodule pin, font self-host |
