@@ -92,6 +92,16 @@ A personal Hugo static site for Mark Epps, deployed at markepps.com. It hosts a 
 - Branch naming: `kebab-case` descriptor (e.g., `fix-header`)
 - Theme is a **git submodule** — do not edit files inside `themes/LoveIt/` directly
 - `.frontmatter/database/` and `public/` should be gitignored (verify `.gitignore`)
+
+### LoveIt Submodule Policy
+
+The `themes/LoveIt` git submodule is pinned to commit SHA `f59fb4ecc2ce6c95e0b3395e3d3da9637d5581cd` (branch `v0.3.0`, ~v0.2.11+169).
+
+**Rules:**
+- **Never run `git submodule update --remote`** — this pulls the branch tip and can silently change the theme version, breaking the site
+- To initialize after a fresh clone: `git submodule update --init --recursive`
+- To intentionally upgrade: check out a new SHA, test locally, then commit the change explicitly
+- Theme files are in `themes/LoveIt/` — **never edit them directly** — use `layouts/` and `assets/css/` overrides
 ## Hugo Build
 - Build output goes to `public/`
 - Custom build logic in `build.sh` (review before running `hugo` directly)
