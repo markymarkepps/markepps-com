@@ -25,10 +25,10 @@ Added explicit `branch = v0.3.0` to `.gitmodules` and documented the submodule p
 
 ## Self-Check: PASSED
 
-| Criterion | Result |
-|-----------|--------|
-| `grep "branch = v0.3.0" .gitmodules` | ✅ |
-| `git submodule status` shows `f59fb4ec` | ✅ SHA unchanged |
-| `grep "git submodule update --remote" copilot-instructions.md` | ✅ |
-| `grep "f59fb4ecc2ce6c95e0b3395e3d3da9637d5581cd" copilot-instructions.md` | ✅ |
-| `grep "v0.3.0" copilot-instructions.md` | ✅ |
+| Criterion                                                                 | Result           |
+| ------------------------------------------------------------------------- | ---------------- |
+| `grep "branch = v0.3.0" .gitmodules`                                      | ✅               |
+| `git submodule status` shows `f59fb4ec`                                   | ✅ SHA unchanged |
+| `grep "git submodule update --remote" copilot-instructions.md`            | ✅               |
+| `grep "f59fb4ecc2ce6c95e0b3395e3d3da9637d5581cd" copilot-instructions.md` | ✅               |
+| `grep "v0.3.0" copilot-instructions.md`                                   | ✅               |

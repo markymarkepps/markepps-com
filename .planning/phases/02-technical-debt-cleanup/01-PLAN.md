@@ -28,10 +28,11 @@ Verify `public/` is correctly excluded from git (DEBT-01) and add clear inline d
 <wave>1</wave>
 
 <read_first>
+
 - .gitignore (current state — verify /public/ entry exists)
 - Run: git ls-files public/ (should return empty — no tracked files under public/)
 - Run: git status --short (confirm public/ does not appear as untracked)
-</read_first>
+  </read_first>
 
 <action>
 1. Open `.gitignore` and confirm the line `/public/` is present.
@@ -41,6 +42,7 @@ Verify `public/` is correctly excluded from git (DEBT-01) and add clear inline d
 5. IF `/public/` is missing: add it to the `## Hugo` section, immediately after `/resources/_gen/`.
 
 The current `.gitignore` has:
+
 ```
 ## Hugo
 /public/
@@ -48,14 +50,16 @@ The current `.gitignore` has:
 /resources/_gen_old/
 /.hugo_build.lock
 ```
+
 This is already correct — the task is to VERIFY it and confirm no tracked files slip through.
 </action>
 
 <acceptance_criteria>
+
 - `git ls-files public/` returns empty output (no files)
 - `.gitignore` contains the line `/public/`
 - `git status --short` does not list any path starting with `public/`
-</acceptance_criteria>
+  </acceptance_criteria>
 
 ---
 
@@ -64,8 +68,9 @@ This is already correct — the task is to VERIFY it and confirm no tracked file
 <wave>1</wave>
 
 <read_first>
+
 - build.sh (current state — existing comments and flag usage)
-</read_first>
+  </read_first>
 
 <action>
 Replace the existing `build.sh` content with a fully documented version. Keep all existing logic exactly as-is — only add explanatory comments.
@@ -117,12 +122,14 @@ fi
 ```
 
 Key changes vs original:
+
 - Added header block explaining purpose, flags, env vars, and when to use vs plain `hugo`
 - Changed `==` to `=` in if/elif conditions (POSIX `sh` compatibility — `==` works in bash but not guaranteed in `/bin/sh`)
 - All existing Hugo commands unchanged (same flags, same branch logic)
-</action>
+  </action>
 
 <acceptance_criteria>
+
 - `build.sh` contains `--gc` flag explanation in a comment
 - `build.sh` contains `--minify` flag explanation in a comment
 - `build.sh` contains `-b` flag explanation in a comment
@@ -132,4 +139,4 @@ Key changes vs original:
 - `build.sh` is executable: `test -x build.sh` exits 0
 - `sh -n build.sh` exits 0 (syntax check passes)
 - Hugo commands unchanged: `grep "hugo --gc --minify" build.sh` returns 3 matches
-</acceptance_criteria>
+  </acceptance_criteria>

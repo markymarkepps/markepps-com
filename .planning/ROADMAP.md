@@ -1,49 +1,40 @@
-# ROADMAP — markepps.com Milestone 1
+# Roadmap — markepps.com
 
-**Milestone goal:** Fix active bugs and technical debt with no new features.
-**Phases:** 2 | **Requirements:** 5 | **Granularity:** Coarse
+## Milestones
 
----
-
-## Phase 1: Dynamic Relative Dates
-
-**Goal:** Replace build-time static "X days ago" with client-side dynamic calculation so post ages are always accurate without rebuilding the site.
-
-**Requirements:** BUG-01
-
-**Why first:** It's the only user-visible bug — visitors see wrong ages on every post card.
-
-**Success criteria:**
-1. Post summary cards show correct relative time on every page load without a site rebuild
-2. The `summary.html` template embeds the publish date as a `data-*` attribute for JS to read
-3. Client-side script is small, inline or minimal, and doesn't cause layout shift
-4. Works correctly in both light and dark mode (display only, not theme-dependent)
-5. Falls back gracefully if JS is disabled (shows publish date)
-
-**Requirements mapped:** BUG-01
+- ✅ **v1.0 Bug Fixes & Technical Debt** — Phases 1–2 (shipped 2026-03-28)
+- 📋 **v1.1 [TBD]** — planned
 
 ---
 
-## Phase 2: Technical Debt Cleanup
+## Phases
 
-**Goal:** Address the actionable technical concerns identified in the codebase map — gitignore hygiene, build documentation, submodule pinning, and font self-hosting.
+<details>
+<summary>✅ v1.0 Bug Fixes & Technical Debt (Phases 1–2) — SHIPPED 2026-03-28</summary>
 
-**Requirements:** DEBT-01, DEBT-02, DEBT-03, DEBT-04
+- [x] Phase 1: Dynamic Relative Dates (1/1 plans) — completed 2026-03-27
+- [x] Phase 2: Technical Debt Cleanup (3/3 plans) — completed 2026-03-28
 
-**Why second:** Lower risk, no user-visible impact, but reduces ongoing maintenance friction.
+Full archive: [`.planning/milestones/v1.0-ROADMAP.md`](.planning/milestones/v1.0-ROADMAP.md)
 
-**Success criteria:**
-1. `public/` directory is confirmed gitignored (or added) — no generated files in git history going forward
-2. `build.sh` has inline comments or a header block explaining what each step does and when to use it vs plain `hugo`
-3. LoveIt submodule in `.gitmodules` references a specific commit SHA, not just the `v0.3.0` branch
-4. `Permanent Marker` font files are present in `static/fonts/` and served locally — no `@import` from `fonts.googleapis.com`
-5. Site builds and renders correctly after all changes (`hugo server` shows no errors)
+</details>
 
-**Requirements mapped:** DEBT-01, DEBT-02, DEBT-03, DEBT-04
+### 📋 v1.1 [TBD] (Planned)
+
+_(Run `/gsd-new-milestone` to begin planning)_
 
 ---
 
-## Backlog (v2)
+## Progress
+
+| Phase                     | Milestone | Plans Complete | Status   | Completed  |
+| ------------------------- | --------- | -------------- | -------- | ---------- |
+| 1. Dynamic Relative Dates | v1.0      | 1/1            | Complete | 2026-03-27 |
+| 2. Technical Debt Cleanup | v1.0      | 3/3            | Complete | 2026-03-28 |
+
+---
+
+## Backlog
 
 - Add real content pages to Projects, Hobbies, Experience, Contact sections
 - Cloudflare Web Analytics integration
@@ -51,17 +42,4 @@
 
 ---
 
-## Traceability
-
-| Requirement | Phase | Status |
-|-------------|-------|--------|
-| BUG-01 | Phase 1 | Pending |
-| DEBT-01 | Phase 2 | Pending |
-| DEBT-02 | Phase 2 | Pending |
-| DEBT-03 | Phase 2 | Pending |
-| DEBT-04 | Phase 2 | Pending |
-
-**Coverage:** 5/5 v1 requirements mapped ✓
-
----
-*Created: 2026-03-27*
+_Updated: 2026-03-28 — v1.0 shipped_
