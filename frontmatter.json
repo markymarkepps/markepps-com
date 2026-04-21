@@ -54,7 +54,7 @@
   "frontMatter.content.pageFolders": [
     {
       "title": "posts",
-      "path": "[[workspace]]/content/posts"
+      "path": "[[workspace]]/markepps-com/content/posts"
     }
   ],
   "frontMatter.git.enabled": true,
