@@ -4,7 +4,7 @@ slug: training-base-built
 description: ""
 date: 2026-04-21T06:52:18.204Z
 preview: ""
-draft: true
+draft: false
 tags:
   - gym
   - running
