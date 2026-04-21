@@ -1,7 +1,7 @@
 ---
 date: 2026-03-01T12:15:40+11:00
 draft: false
-title: Training Plan - Build my Base
+title: Training - Build my Base
 tags:
   - gym
   - running
@@ -9,6 +9,8 @@ tags:
 slug: training-plan-build-base
 description: Starting a new training plan to focus on building my base over the next 6 weeks.
 summary: Starting a new training plan to focus on building my base over the next 6 weeks.
+categories:
+  - fitness
 ---
 
 Alrighty!
@@ -103,3 +105,5 @@ Non-negotiable daily work to keep the shoulder stable
 - **VW's:** 1 set of 20, slow but comfortable with the shoulder. Build up to 3 sets a day.
 - **Bow and arrow stretch:** 1 set of 10 reps each side.
 - **Massage Ball:** Evening deep tissue release on the calves and back/shoulder.
+
+**Follow up:** [Training - Base Built.]({{< relref "posts/2026-04-21-training---base-built.md" >}})
