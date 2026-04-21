@@ -8,8 +8,6 @@ tags:
   - gym
   - running
   - cycling
-categories:
-  - fitness
 description: "Reviewing the last 6 weeks of training progress"
 summary: "Reviewing the last 6 weeks of training progress"
 ---

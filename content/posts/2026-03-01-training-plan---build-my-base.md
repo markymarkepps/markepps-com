@@ -9,8 +9,6 @@ tags:
 slug: training-plan-build-base
 description: Starting a new training plan to focus on building my base over the next 6 weeks.
 summary: Starting a new training plan to focus on building my base over the next 6 weeks.
-categories:
-  - fitness
 ---
 
 Alrighty!
