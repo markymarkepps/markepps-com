@@ -1,7 +1,6 @@
 ---
 title: Training - Base Built.
 slug: training-base-built
-description: ""
 date: 2026-04-21T06:52:18.204Z
 preview: ""
 draft: false
@@ -11,18 +10,26 @@ tags:
   - cycling
 categories:
   - fitness
-summary: ""
+description: "Reviewing the last 6 weeks of training progress"
+summary: "Reviewing the last 6 weeks of training progress"
 ---
 
-We are now 6+ weeks further into the year and I have completed my plan[Training - Build my Base]({{< relref "posts/2026-03-01-training-plan---build-my-base.md" >}}). Let's review how it went.
+We are now 6+ weeks further into the year and I have completed my plan [Training - Build my Base]({{< relref "posts/2026-03-01-training-plan---build-my-base.md" >}}). Let's review how it went.
 
 ## Gym
 
-## Cardio
+Completed 10/12 sessions.
 
-### Running
+- **Squats**: Started at 46kg and successfully increased 2.5kg every single week, finishing the block at 61kg.
+- **Deadlifts**: Started at 60kg and finished the block at 70kg after missing x2 sessions
+- **Physio work**: Completed regular shoulder and calf work every session
 
-### Cycling
+## Cardio - Running & Cycling
+
+A bit inconsistent here but I focused more on the physio and gym work. In the end I completed:
+
+- **Running**: 7/12 sessions
+- **Cycling**: 6/12 sessions but I also got new bike so this was complimented by a range of small rides and a big one [Capital City Trail-ish - Strava.com](https://www.strava.com/activities/17994800745)
 
 ## What's next?
 
