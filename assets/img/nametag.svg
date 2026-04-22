@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="230" viewBox="0 0 390 230" role="img" aria-label="Hello, my name is Mark Epps">
+  <title>Hello, my name is Mark Epps</title>
+  <defs>
+    <style>
+      @font-face {
+        font-family: "Permanent Marker";
+        font-style: normal;
+        font-weight: 400;
+        src: url("data:font/woff2;base64,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") format("woff2");
+      }
+      .shadow  { fill: rgba(0,0,0,0.20); }
+      .card    { fill: #ffffff; }
+      .top     { fill: #1976d2; }
+      .hello   { font: 900 52px "Arial Black", Arial, sans-serif; fill: #ffffff; text-anchor: middle; dominant-baseline: auto; }
+      .nameis  { font: 700 22px Helvetica, Arial, sans-serif; fill: #ffffff; text-anchor: middle; dominant-baseline: auto; }
+      .name    { font: 400 54px "Permanent Marker", cursive; fill: #111111; text-anchor: middle; dominant-baseline: auto; }
+      @media (prefers-color-scheme: dark) {
+        .top { fill: #d32f2f; }
+      }
+    </style>
+  </defs>
+
+  <!-- Offset hard shadow (10px right, 10px down, no blur) -->
+  <rect x="10" y="10" width="370" height="215" rx="15" class="shadow"/>
+
+  <!-- Card background (always white) -->
+  <rect x="0" y="0" width="370" height="215" rx="15" class="card"/>
+
+  <!-- Coloured top band, rounded at top only -->
+  <rect x="0" y="0" width="370" height="125" rx="15" class="top"/>
+  <!-- Square off the bottom of the coloured band -->
+  <rect x="0" y="110" width="370" height="15" class="top"/>
+
+  <!-- HELLO -->
+  <text x="185" y="72" class="hello">HELLO</text>
+
+  <!-- my name is -->
+  <text x="185" y="106" class="nameis">my name is</text>
+
+  <!-- Mark Epps -->
+  <text x="185" y="180" class="name">Mark Epps</text>
+</svg>
